@@ -5,12 +5,11 @@ import Link from "next/link";
 
 import { api } from "~/utils/api";
 import NavBar from "./navbar";
-import Projects from "./projects";
+import { Projects } from "./projects";
 
 const Home: NextPage = () => {
   const user = useUser();
 
-  console.log(user.isSignedIn);
   return (
     <>
       <Head>
